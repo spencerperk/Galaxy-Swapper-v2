@@ -1,6 +1,6 @@
-﻿using Galaxy_Swapper_v2.Workspace;
-using Galaxy_Swapper_v2.Workspace.Properties;
-using Galaxy_Swapper_v2.Workspace.Utilities;
+﻿using African Steve_Swapper_v2.Workspace;
+using African Steve_Swapper_v2.Workspace.Properties;
+using African Steve_Swapper_v2.Workspace.Utilities;
 using Serilog;
 using System;
 using System.Diagnostics;
@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace Galaxy_Swapper_v2
+namespace African Steve_Swapper_v2
 {
     public partial class App : Application
     {
-        public static readonly string Config = $"{Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}\\Galaxy-Swapper-v2-Config";
+        public static readonly string Config = $"{Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}\\African Steve-Swapper-v2-Config";
         public static readonly string[] SubDirectories = { $"{Config}\\DLLS", $"{Config}\\Plugins", $"{Config}\\LOGS", $"{Config}\\Binaries" };
         protected override void OnStartup(StartupEventArgs e)
         {
@@ -21,7 +21,7 @@ namespace Galaxy_Swapper_v2
             if (currentprocess.Length > 1)
             {
                 Win32.SetProcessHigher(currentprocess);
-                Message.DisplaySTA("Info", "It has been detected that Galaxy Swapper is already running. The process will be brought to the front.\nIf there is an issue, please end the 'Galaxy Swapper v2' process in Task Manager and restart the application.");
+                Message.DisplaySTA("Info", "It has been detected that African Steve Swapper is already running. The process will be brought to the front.\nIf there is an issue, please end the 'African Steve Swapper v2' process in Task Manager and restart the application.");
                 Environment.Exit(0);
             }
 
